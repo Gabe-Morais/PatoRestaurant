@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
+    <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <UserSecretsId>aspnet-PatoRestaurant-DDB01456-E1E7-440F-B35A-FD9E06825917</UserSecretsId>
+    <UserSecretsId>aspnet-PatoRestaurant-FC6C7447-C01F-448A-83C3-03A7CC9BF239</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>

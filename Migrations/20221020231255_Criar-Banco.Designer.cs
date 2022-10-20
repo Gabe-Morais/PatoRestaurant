@@ -11,7 +11,7 @@ using PatoRestaurant.Data;
 namespace PatoRestaurant.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221019231003_Criar-Banco")]
+    [Migration("20221020231255_Criar-Banco")]
     partial class CriarBanco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
