@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-	<title>Pato | @ViewData["Title"]</title>
+	<title>PatoRestaurant | @ViewData["Title"]</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -42,8 +43,9 @@
 				<div class="wrap_header trans-0-3">
 					<!-- Logo -->
 					<div class="logo">
-						<a href="index.html">
-							<img src="~/images/icons/logo.png" alt="IMG-LOGO" data-logofixed="../images/icons/logo2.png">
+						<a asp-action="Index" asp-controller="Home">
+							<img src="~/images/icons/logo.png" alt="IMG-LOGO"
+								data-logofixed="../images/icons/logo2.png">
 						</a>
 					</div>
 
@@ -128,7 +130,8 @@
 
 			<li class="t-center">
 				<!-- Button3 -->
-				<a asp-action="Index" asp-controller="Home" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
+				<a asp-action="Reservation" asp-controller="Home"
+					class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
 					Reservas
 				</a>
 			</li>
@@ -395,14 +398,11 @@
 			<div class="wrap-video-mo-01">
 				<div class="w-full wrap-pic-w op-0-0"><img src="~/images/icons/video-16-9.jpg" alt="IMG"></div>
 				<div class="video-mo-01">
-					<iframe src="https://www.youtube.com/embed/5k1hSu2gdKE?rel=0&amp;showinfo=0"
-						allowfullscreen></iframe>
+
 				</div>
 			</div>
 		</div>
 	</div>
-
-
 
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="~/vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -418,7 +418,7 @@
 	<script type="text/javascript" src="~/vendor/daterangepicker/daterangepicker.js"></script>
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="~/vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/slick-custom.js"></script>
+	<script type="text/javascript" src="~/js/slick-custom.js"></script>
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="~/vendor/parallax100/parallax100.js"></script>
 	<script type="text/javascript">
@@ -429,7 +429,7 @@
 	<!--===============================================================================================-->
 	<script type="text/javascript" src="~/vendor/lightbox2/js/lightbox.min.js"></script>
 	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="~/js/main.js"></script>
 	@await RenderSectionAsync("Scripts", required: false)
 </body>
 
