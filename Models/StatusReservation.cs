@@ -3,12 +3,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PatoRestaurant.Models
 {
-    [Table("Category")]
-    public class Category
+    [Table("StatusReservation")]
+    public class StatusReservation
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public byte Id { get; set; }
+        public UInt16 Id { get; set; }
 
         [Display(Name= "Nome")]
         [Required(ErrorMessage = "Informe o {0}")]

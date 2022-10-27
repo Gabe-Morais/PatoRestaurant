@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CiW1kZzo7enDmyZc16ik8/0gQUpLwbDL5oLbwaY4390IEsMM3Fj9Qn4DRece63J6dzIyHdhKAyWAWqkQ8BedoA==",
+  "dgSpecHash": "isW44YmfuTveqR/PCx2owc+IOWZTvpa8kvjiUgd8V0JC7GnF8g4YCjzIEH1KEH9vPsDm15MWd2rKHKSKXQdbmw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\etec\\Desktop\\PatoRestaurant\\PatoRestaurant.csproj",
+  "projectFilePath": "C:\\Users\\etec\\Desktop\\GitHub\\PatoRestaurant\\PatoRestaurant.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\etec\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\etec\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.3\\microsoft.aspnetcore.cryptography.internal.6.0.3.nupkg.sha512",

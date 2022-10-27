@@ -3,25 +3,30 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PatoRestaurant.Models
 {
-    [Table("Category")]
-    public class Category
+    [Table("SocialEvent")]
+    public class SocialEvent
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public byte Id { get; set; }
+        public UInt16 Id { get; set; }
 
         [Display(Name= "Nome")]
         [Required(ErrorMessage = "Informe o {0}")]
         [StringLength(30, ErrorMessage = "O {0} deve possuir no maximo {1} caracteres")]
         public string Name { get; set; }
         
-        [Display(Name= "Foto Home")]
-        [StringLength(400)]
-        public string Image { get; set; }
+        [Display(Name= "Descrição")]
+        [StringLength(2000)]
+        public string Description { get; set; }
 
-        [Display(Name= "Banner")]
+        [Display(Name= "Data do evento")]
+        [Required(ErrorMessage = "Informe a data do evento")]
+        public DateTime EventDate { get; set; }
+
+        [Display(Name = "Imagem")]
         [StringLength(400)]
-        public string Banner { get; set; }
+
+        public string Image { get; set; }
 
 
     }
