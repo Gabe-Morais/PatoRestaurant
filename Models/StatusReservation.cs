@@ -8,7 +8,7 @@ namespace PatoRestaurant.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public UInt16 Id { get; set; }
+        public byte Id { get; set; }
 
         [Display(Name= "Nome")]
         [Required(ErrorMessage = "Informe o {0}")]
