@@ -1,5 +1,5 @@
-using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace PatoRestaurant.Models
 {
@@ -11,7 +11,5 @@ namespace PatoRestaurant.Models
 
         [StringLength(400)]
         public string ProfilePicture { get; set; }
-
-        
     }
 }

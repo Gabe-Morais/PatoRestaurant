@@ -8,39 +8,36 @@ namespace PatoRestaurant.Models
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public byte Id { get; set; }
-
-        [Display(Name= "Nome")]
+        public UInt16 Id { get; set; } 
+        
+        [Display(Name = "Nome")]
         [Required(ErrorMessage = "Informe o seu {0}")]
-        [StringLength(30, ErrorMessage = "O {0} deve possuir no maximo {1} caracteres")]
+        [StringLength(60, ErrorMessage = "O {0} deve possuir no máximo {1} caracteres")]
         public string Name { get; set; }
 
-        [Display(Name= "Data da reserva")]
+        [Display(Name = "Data da Reserva")]
         [Required(ErrorMessage = "Informe a {0}")]
         public DateTime ReservationDate { get; set; }
 
-        [Display(Name= "Celular")]
+        [Display(Name = "Celular")]
         [Required(ErrorMessage = "Informe o seu {0}")]
-        [StringLength(30, ErrorMessage = "O {0} deve possuir no maximo {1} caracteres")]
+        [StringLength(20, ErrorMessage = "O {0} deve possuir no máximo {1} caracteres")]
         public string Phone { get; set; }
 
-        [Display(Name= "Convidados")]
-        [Required(ErrorMessage = "Informe o numero de convidados")]
+        [Display(Name = "Convidados")]
+        [Required(ErrorMessage = "Informe o número de convidados")]
         public byte Guests { get; set; }
 
-        [Display(Name= "E-mail")]
-        [StringLength(100, ErrorMessage = "O {0} deve possuir no maximo {1} caracteres")]
-        [EmailAddress(ErrorMessage = "Informe um email valido!")]
-
+        [Display(Name = "E-mail")]
+        [StringLength(100, ErrorMessage = "O {0} deve possuir no máximo {1} caracteres")]
+        [EmailAddress(ErrorMessage = "Informe um e-mail válido!")]
         public string Email { get; set; }
 
         [Display(Name = "Data de Cadastro")]
-        
         public DateTime CreatedDate { get; set; } = DateTime.Now;
 
         [Display(Name = "Status da Reserva")]
         public byte StatusReservationId { get; set; }
-
         [ForeignKey("StatusReservationId")]
         public StatusReservation StatusReservation { get; set; }
     }
